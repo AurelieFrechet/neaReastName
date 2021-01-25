@@ -21,3 +21,10 @@ test_that("LILI MARLENE", {
   match_names(name = c("LILI", "MARLENE"),
               list_of_names = list_of_names)
 })
+
+
+test_that("BATMAN", {
+  match_names(name = c("BATMAN"),
+              list_of_names = list_of_names)
+})
+
