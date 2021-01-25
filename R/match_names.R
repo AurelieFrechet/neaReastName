@@ -21,7 +21,7 @@ match_names <- function(name,
           threshold = threshold,
           r_letters = r_letters
         )) +
-
+        # Full name, non-ordered
         0.4 * pertinence(common_names(
           name1 = name,
           name2 = n,
@@ -49,7 +49,11 @@ match_names <- function(name,
           order = TRUE,
           threshold = threshold,
           r_letters = r_letters
-        ))
+        )) +
+
+        (concat_namedist(name1 = name,
+                               name2 = n,
+                               r_letters = r_letters) <= threshold)
          })
 
 return(list_of_names[score > 0.5])

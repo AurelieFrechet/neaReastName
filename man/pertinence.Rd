@@ -2,16 +2,17 @@
 % Please edit documentation in R/pertinence.R
 \name{pertinence}
 \alias{pertinence}
-\title{Title}
+\title{pertinence}
 \usage{
-pertinence(vector)
+pertinence(names_found, center_names_w = 0.1)
 }
 \arguments{
 \item{vector}{result of common_names}
 }
 \value{
-
+pertinence score between 0 and 1
 }
 \description{
-Title
+This is the section where I'm supposed
+to describe this f** functions I've spend my evening on
 }

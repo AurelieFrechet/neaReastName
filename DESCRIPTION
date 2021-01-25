@@ -14,8 +14,10 @@ Suggests:
 RoxygenNote: 7.0.2
 Collate: 
     'common_names.R'
+    'concat_namedist.R'
     'global_variables.R'
     'replace_letters.R'
     'namedist.R'
     'is_similar.R'
+    'match_names.R'
     'pertinence.R'
