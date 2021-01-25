@@ -65,34 +65,3 @@ test_that("3 center missing names", {
 })
 
 
-# test_that("3 missing name", {
-#
-# })
-# test_that("4 missing name", {
-#
-# })
-
-
-# # 5 names, extremity names NA 0.65
-# expect_equal(pertinence(c(NA, "BERNAR", "DE", "LA", "FESANDIERE")),
-#              1)
-# expect_equal(pertinence(c("JEAN", "BERNAR", "DE", "LA", NA)),
-#              1)
-#
-# # 4 names, extremity names NA 0.60
-# expect_equal(pertinence(c(NA, "LAURA", "JULIE", "FRECHET")),
-#              1)
-# expect_equal(pertinence(c("AURELIE", "LAURA", "JULIE", NA)),
-#              1)
-# # 3 names, extremity names NA 0.55
-# expect_equal(pertinence(c(NA, "LE", "GUILLOU")),
-#              1)
-# expect_equal(pertinence(c("SULIAC", "LE", NA)),
-#              1)
-#
-# # 2 names 0.5
-# expect_equal(pertinence(c(NA, "ANDRE")),
-#              1)
-# expect_equal(pertinence(c("ANTOINE", NA)),
-#              1)
-
