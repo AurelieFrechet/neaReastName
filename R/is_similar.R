@@ -1,4 +1,3 @@
-
 #' @include namedist.R
 #' @title is_similar
 #' @description Get if two names are similar based on the distance between them.

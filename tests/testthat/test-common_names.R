@@ -1,54 +1,4 @@
 
-# Common initials ---------------------------------------------------------
-
-test_that("Common Initials, ordered", {
-
-  expect_equal(common_names(
-    name1 = c("AURELIE", "FRECHET"),
-    name2 = c("FRECHET", "AURELIE"),
-    initials_only = TRUE
-  ),
-  c("A", NA_character_))
-
-
-  expect_equal(common_names(
-    name1 = c("AURELIE", "FRECHET"),
-    name2 = c("ARSENE", "LUPIN"),
-    initials_only = TRUE
-  ),
-  c("A", NA_character_))
-
-  expect_equal(common_names(
-    name1 = c("AURELIE", "FRECHET"),
-    name2 = c("AURELIE", "FRECHET"),
-    initials_only = TRUE
-  ),
-  c("A", "F"))
-
-  expect_equal(common_names(
-    name1 = c("AURELIE", "FRECHET"),
-    name2 = c("AURELIE", "LAURA", "FRECHET"),
-    initials_only = TRUE
-  ),
-  c("A", NA_character_,  "F"))
-
-  expect_equal(common_names(
-    name1 = c("AURELIE", "LAURA", "FRECHET"),
-    name2 = c("AURELIE", "FRECHET"),
-    initials_only = TRUE
-  ),
-  c("A", NA_character_,  "F"))
-
-  expect_equal(common_names(
-    name1 = c("FRECHET", "AURELIE"),
-    name2 = c("AURELIE", "LAURA", "FRECHET"),
-    initials_only = TRUE
-  ),
-  c("A", NA_character_,  NA_character_))
-
-})
-
-
 # Common names - threshold 1 -------------------------------------------------
 
 
@@ -101,7 +51,7 @@ test_that("Common names, ordered, threshold 1, r_letters default", {
 
 })
 
-# Common names - margin 2 -------------------------------------------------
+# Common names - threshold 2 -------------------------------------------------
 
 test_that("Common names, ordered, threshold 2, r_letters default", {
 

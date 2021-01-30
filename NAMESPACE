@@ -2,6 +2,7 @@
 
 export(common_names)
 export(is_similar)
+export(match_names)
 export(namedist)
 export(pertinence)
 import(stringdist)

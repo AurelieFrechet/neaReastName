@@ -7,7 +7,6 @@
 common_names(
   name1,
   name2,
-  initials_only = FALSE,
   order = TRUE,
   threshold = 1,
   r_letters = c(K = "C", W = "V", Y = "I", Z = "S")
